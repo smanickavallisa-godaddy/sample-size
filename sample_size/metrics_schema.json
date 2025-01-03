@@ -22,7 +22,8 @@
                             "properties": {
                                 "alternative": {"type": "string"},
                                 "mde": {"type": "number"},
-                                "probability": {"type": "number"}
+                                "probability": {"type": "number"},
+                                "is_relative_mde": {"type": "boolean"}
                             },
                             "required": ["mde", "probability"]
                         }
@@ -42,7 +43,8 @@
                             "properties": {
                                 "alternative": {"type": "string"},
                                 "mde": {"type": "number"},
-                                "variance": {"type": "number"}
+                                "variance": {"type": "number"},
+                                "is_relative_mde": {"type": "boolean"}
                             },
                             "required": ["mde", "variance"]
                         }
@@ -66,7 +68,8 @@
                                 "numerator_variance": {"type": "number"},
                                 "denominator_mean": {"type": "number"},
                                 "denominator_variance": {"type": "number"},
-                                "covariance": {"type": "number"}
+                                "covariance": {"type": "number"},
+                                "is_relative_mde": {"type": "boolean"}
                             },
                             "required": [
                                 "mde",

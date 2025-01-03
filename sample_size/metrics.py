@@ -72,6 +72,7 @@ class BaseMetric:
 class BooleanMetric(BaseMetric):
     probability: float
     mde: float
+    is_relative_mde: bool
 
     def __init__(
         self,
@@ -110,6 +111,7 @@ class BooleanMetric(BaseMetric):
 
 class NumericMetric(BaseMetric):
     mde: float
+    is_relative_mde: bool
 
     def __init__(
         self,
@@ -146,6 +148,7 @@ class RatioMetric(BaseMetric):
     denominator_mean: float
     denominator_variance: float
     covariance: float
+    is_relative_mde: bool
 
     def __init__(
         self,
